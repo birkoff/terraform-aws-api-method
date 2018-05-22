@@ -2,9 +2,11 @@
 Terraform module which created AWS API Method
 
 These types of resources are created:
-- ...
+- aws_api_gateway_method
+- aws_api_gateway_integration
+- aws_api_gateway_method_response
+- aws_api_gateway_integration_response
 
-Lambda function role is not created by default, it has to be pass as parameter to the module
 
 Usage
 -------
