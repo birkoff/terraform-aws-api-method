@@ -6,6 +6,7 @@ These types of resources are created:
 - aws_api_gateway_integration
 - aws_api_gateway_method_response
 - aws_api_gateway_integration_response
+- aws_lambda_permission
 
 
 Usage
@@ -21,6 +22,7 @@ module "ec2manager_api_method_get" {
   lambda_fuction_arn = "${module.lambda.lamda_fuction_arn}"
   api_resource_id    = "${module.api.resource_id}"
   authorization      = "NONE"
+  api_resource_path  = "${module.api.resource_path}"
 }
 ````
 
