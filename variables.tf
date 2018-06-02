@@ -29,7 +29,3 @@ variable "lambda_fuction_arn" {
 variable "integration_type" {
   type = "string"
 }
-
-variable "account_id" {
-  type = "string"
-}
