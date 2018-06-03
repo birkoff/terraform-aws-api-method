@@ -7,6 +7,7 @@ resource "aws_api_gateway_method" "api-method" {
   resource_id   = "${var.api_resource_id}"
   http_method   = "${var.http_method}"
   authorization = "${var.authorization}"
+  api_key_required = "${var.api_key_required}"
 }
 
 resource "aws_api_gateway_integration" "api-method-integration" {
